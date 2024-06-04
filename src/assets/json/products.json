@@ -1,0 +1,3174 @@
+[
+  {
+    "id":1,
+    "name":"Aspire",
+    "brand_id":1,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Acer",
+    "model_specification_id":1,
+    "price":"599.00",
+    "stock":62,
+    "current_price":"599.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"acer aspire 12.jpg"
+      },
+      {
+        "path":"acer aspire 1.jpg"
+      },
+      {
+        "path":"acer aspire 13.jpg"
+      },
+      {
+        "path":"acer aspire 14.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i5",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"1TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1650",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"4-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.8 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Red",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":2,
+    "name":"Aspire",
+    "brand_id":1,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Acer",
+    "model_specification_id":2,
+    "price":"599.00",
+    "stock":27,
+    "current_price":"599.00",
+    "old_price":"599.00",
+    "photos":[
+      {
+        "path":"acer 11.jpg"
+      },
+      {
+        "path":"acer 12.jpg"
+      },
+      {
+        "path":"acer 13.jpg"
+      },
+      {
+        "path":"swift12.jpg"
+      },
+      {
+        "path":"acer 14.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"14 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 5",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"2TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2080",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Silver",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":3,
+    "name":"Predator",
+    "brand_id":1,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Acer",
+    "model_specification_id":3,
+    "price":"1149.00",
+    "stock":14,
+    "current_price":"1149.00",
+    "old_price":"1151.00",
+    "photos":[
+      {
+        "path":"predator 1.jpg"
+      },
+      {
+        "path":"predator 11.jpg"
+      },
+      {
+        "path":"predator 12.jpg"
+      },
+      {
+        "path":"predator 13.jpg"
+      },
+      {
+        "path":"predator 14.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"17.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 3",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Green",
+        "parent":"Color"
+      },
+      {
+        "name":"1 year",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":4,
+    "name":"Swift",
+    "brand_id":1,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Acer",
+    "model_specification_id":4,
+    "price":"899.00",
+    "stock":0,
+    "current_price":"899.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"swift 1.jpg"
+      },
+      {
+        "path":"swift 13.jpg"
+      },
+      {
+        "path":"swift side.jpg"
+      },
+      {
+        "path":"swift 14.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i7",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"2TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2070",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"3-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.8 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"White",
+        "parent":"Color"
+      },
+      {
+        "name":"1 year",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":5,
+    "name":"Macbook Air",
+    "brand_id":2,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Apple",
+    "model_specification_id":5,
+    "price":"649.00",
+    "stock":69,
+    "current_price":"649.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"airr1.jpg"
+      },
+      {
+        "path":"airr2.jpg"
+      },
+      {
+        "path":"airr3.jpg"
+      },
+      {
+        "path":"airr4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i3",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"4-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Silver",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":6,
+    "name":"Macbook Pro",
+    "brand_id":2,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Apple",
+    "model_specification_id":6,
+    "price":"549.00",
+    "stock":21,
+    "current_price":"549.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"pro 1.jpg"
+      },
+      {
+        "path":"pro 2.jpg"
+      },
+      {
+        "path":"proo5.jpg"
+      },
+      {
+        "path":"pro 4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i5",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2080",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"6-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Black",
+        "parent":"Color"
+      },
+      {
+        "name":"1 year",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":7,
+    "name":"Zenbook",
+    "brand_id":3,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Asus",
+    "model_specification_id":7,
+    "price":"799.00",
+    "stock":16,
+    "current_price":"799.00",
+    "old_price":"803.00",
+    "photos":[
+      {
+        "path":"zenbook.png"
+      },
+      {
+        "path":"zenbook2.png"
+      },
+      {
+        "path":"zenbook 3.png"
+      },
+      {
+        "path":"zenbook4.png"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 7",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"1TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2060",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"4-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Black",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":8,
+    "name":"Zenbook",
+    "brand_id":3,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Asus",
+    "model_specification_id":8,
+    "price":"1099.00",
+    "stock":97,
+    "current_price":"1099.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"zen1.jpg"
+      },
+      {
+        "path":"zen2.jpg"
+      },
+      {
+        "path":"zenbook 3.png"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"14 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 7",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"512GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Silver",
+        "parent":"Color"
+      },
+      {
+        "name":"1 year",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":9,
+    "name":"VivoBook",
+    "brand_id":3,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Asus",
+    "model_specification_id":9,
+    "price":"1049.00",
+    "stock":81,
+    "current_price":"1049.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"vivo1.png"
+      },
+      {
+        "path":"vivo2.png"
+      },
+      {
+        "path":"vivo 3.png"
+      },
+      {
+        "path":"vivo 4.png"
+      },
+      {
+        "path":"vivo 5.png"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"17.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i3",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2070",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"6-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Blue",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":10,
+    "name":"VivoBook",
+    "brand_id":3,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Asus",
+    "model_specification_id":10,
+    "price":"899.00",
+    "stock":69,
+    "current_price":"899.00",
+    "old_price":"909.00",
+    "photos":[
+      {
+        "path":"vivoo1.png"
+      },
+      {
+        "path":"vivoo2.png"
+      },
+      {
+        "path":"vivoo3.png"
+      },
+      {
+        "path":"vivoo4.png"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"14 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 3",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Green",
+        "parent":"Color"
+      },
+      {
+        "name":"1 year",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":11,
+    "name":"ROG",
+    "brand_id":3,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Asus",
+    "model_specification_id":11,
+    "price":"599.00",
+    "stock":66,
+    "current_price":"599.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"rog1.png"
+      },
+      {
+        "path":"rog2.png"
+      },
+      {
+        "path":"rog3.png"
+      },
+      {
+        "path":"rog4.png"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"17.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i7",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"3-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"White",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":12,
+    "name":"ROG",
+    "brand_id":3,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Asus",
+    "model_specification_id":12,
+    "price":"1149.00",
+    "stock":8,
+    "current_price":"1149.00",
+    "old_price":"1162.00",
+    "photos":[
+      {
+        "path":"rogg1.png"
+      },
+      {
+        "path":"rogg2.png"
+      },
+      {
+        "path":"rogg3.png"
+      },
+      {
+        "path":"rogg4.png"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i3",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2080",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.8 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"White",
+        "parent":"Color"
+      },
+      {
+        "name":"1 year",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":12,
+    "name":"Inspiron",
+    "brand_id":4,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Dell",
+    "model_specification_id":13,
+    "price":"549.00",
+    "stock":62,
+    "current_price":"549.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"insp1.jpg"
+      },
+      {
+        "path":"insp2.jpg"
+      },
+      {
+        "path":"insp4.jpg"
+      },
+      {
+        "path":"insp6.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"17.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 3",
+        "parent":"Processor"
+      },
+      {
+        "name":"32GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1650",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"6-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.8 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Green",
+        "parent":"Color"
+      },
+      {
+        "name":"1 year",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":13,
+    "name":"XPS",
+    "brand_id":4,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Dell",
+    "model_specification_id":14,
+    "price":"1199.00",
+    "stock":93,
+    "current_price":"1199.00",
+    "old_price":"1204.00",
+    "photos":[
+      {
+        "path":"dell1.jpg"
+      },
+      {
+        "path":"dell2.jpg"
+      },
+      {
+        "path":"dell3.jpg"
+      },
+      {
+        "path":"dell4.jpg"
+      },
+      {
+        "path":"dell5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i7",
+        "parent":"Processor"
+      },
+      {
+        "name":"32GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"4-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Green",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":14,
+    "name":"XPS",
+    "brand_id":4,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Dell",
+    "model_specification_id":15,
+    "price":"1099.00",
+    "stock":14,
+    "current_price":"1099.00",
+    "old_price":"1114.00",
+    "photos":[
+      {
+        "path":"vost1.jpg"
+      },
+      {
+        "path":"vost2.jpg"
+      },
+      {
+        "path":"vost3.jpg"
+      },
+      {
+        "path":"vost4.jpg"
+      },
+      {
+        "path":"vost5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i5",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2070",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"White",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":15,
+    "name":"Alienware",
+    "brand_id":4,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Dell",
+    "model_specification_id":16,
+    "price":"599.00",
+    "stock":2,
+    "current_price":"599.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"aien1.jpg"
+      },
+      {
+        "path":"aien2.jpg"
+      },
+      {
+        "path":"aien3.jpg"
+      },
+      {
+        "path":"aien4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i7",
+        "parent":"Processor"
+      },
+      {
+        "name":"8GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2070",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"6-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.8 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Blue",
+        "parent":"Color"
+      },
+      {
+        "name":"1 year",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":16,
+    "name":"Alienware",
+    "brand_id":4,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Dell",
+    "model_specification_id":17,
+    "price":"849.00",
+    "stock":25,
+    "current_price":"849.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"ali1.jpg"
+      },
+      {
+        "path":"ali3.jpg"
+      },
+      {
+        "path":"ali2.jpg"
+      },
+      {
+        "path":"ali4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"14 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i5",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10 Pro",
+        "parent":"Operating System"
+      },
+      {
+        "name":"4-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Black",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":17,
+    "name":"Pavilion",
+    "brand_id":5,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"HP",
+    "model_specification_id":18,
+    "price":"1199.00",
+    "stock":14,
+    "current_price":"1199.00",
+    "old_price":"1212.00",
+    "photos":[
+      {
+        "path":"pav1.jpg"
+      },
+      {
+        "path":"pav2.jpg"
+      },
+      {
+        "path":"pav3.jpg"
+      },
+      {
+        "path":"pav4.jpg"
+      },
+      {
+        "path":"pav5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i5",
+        "parent":"Processor"
+      },
+      {
+        "name":"8GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2080",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"6-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.8 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Black",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":18,
+    "name":"Pavilion",
+    "brand_id":5,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"HP",
+    "model_specification_id":19,
+    "price":"849.00",
+    "stock":31,
+    "current_price":"849.00",
+    "old_price":"858.00",
+    "photos":[
+      {
+        "path":"pavi1.jpg"
+      },
+      {
+        "path":"pavi2.jpg"
+      },
+      {
+        "path":"pavi3.jpg"
+      },
+      {
+        "path":"pavi4.jpg"
+      },
+      {
+        "path":"pavi5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 7",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"6-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Red",
+        "parent":"Color"
+      },
+      {
+        "name":"1 year",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":19,
+    "name":"Envy",
+    "brand_id":5,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"HP",
+    "model_specification_id":20,
+    "price":"549.00",
+    "stock":62,
+    "current_price":"549.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"env1.jpg"
+      },
+      {
+        "path":"env2.jpg"
+      },
+      {
+        "path":"env3.jpg"
+      },
+      {
+        "path":"env4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"14 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i5",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"512GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2070",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"6-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Red",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":20,
+    "name":"Envy",
+    "brand_id":5,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"HP",
+    "model_specification_id":21,
+    "price":"549.00",
+    "stock":27,
+    "current_price":"549.00",
+    "old_price":"562.00",
+    "photos":[
+      {
+        "path":"envy1.jpg"
+      },
+      {
+        "path":"envy2.jpg"
+      },
+      {
+        "path":"envy3.jpg"
+      },
+      {
+        "path":"envy4.jpg"
+      },
+      {
+        "path":"envy5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i3",
+        "parent":"Processor"
+      },
+      {
+        "name":"8GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"1TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2060",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"3-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"White",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":21,
+    "name":"Spectre",
+    "brand_id":5,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"HP",
+    "model_specification_id":22,
+    "price":"799.00",
+    "stock":62,
+    "current_price":"799.00",
+    "old_price":"808.00",
+    "photos":[
+      {
+        "path":"spect1.jpg"
+      },
+      {
+        "path":"spect2.jpg"
+      },
+      {
+        "path":"spect3.jpg"
+      },
+      {
+        "path":"spect4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 3",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"2TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10 Pro",
+        "parent":"Operating System"
+      },
+      {
+        "name":"4-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Green",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":22,
+    "name":"Spectre",
+    "brand_id":5,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"HP",
+    "model_specification_id":23,
+    "price":"1049.00",
+    "stock":74,
+    "current_price":"1049.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"sp1.jpg"
+      },
+      {
+        "path":"sp2.jpg"
+      },
+      {
+        "path":"sp3.jpg"
+      },
+      {
+        "path":"sp4.jpg"
+      },
+      {
+        "path":"sp5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i3",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2060",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"4-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Blue",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":23,
+    "name":"Victus",
+    "brand_id":5,
+    "created_at":null,
+    "updated_at":"2024-03-06 16:47:14",
+    "brand_name":"HP",
+    "model_specification_id":42,
+    "price":"549.00",
+    "stock":48,
+    "current_price":"549.00",
+    "old_price":"562.00",
+    "photos":[
+      {
+        "path":"hv1.jpg"
+      },
+      {
+        "path":"hv2.jpg"
+      },
+      {
+        "path":"hv3.jpg"
+      },
+      {
+        "path":"hv4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"14 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i7",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2080",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"6-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Red",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":24,
+    "name":"Victus",
+    "brand_id":5,
+    "created_at":null,
+    "updated_at":"2024-03-06 16:47:14",
+    "brand_name":"HP",
+    "model_specification_id":43,
+    "price":"1149.00",
+    "stock":31,
+    "current_price":"1149.00",
+    "old_price":"1157.00",
+    "photos":[
+      {
+        "path":"hvv1.jpg"
+      },
+      {
+        "path":"hvv2.jpg"
+      },
+      {
+        "path":"hvv3.jpg"
+      },
+      {
+        "path":"hvv4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"17.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i3",
+        "parent":"Processor"
+      },
+      {
+        "name":"32GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2080",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"3-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Black",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":25,
+    "name":"IdeaPad",
+    "brand_id":6,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Lenovo",
+    "model_specification_id":24,
+    "price":"949.00",
+    "stock":89,
+    "current_price":"949.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"idea1.jpg"
+      },
+      {
+        "path":"idea2.jpg"
+      },
+      {
+        "path":"idea3.jpg"
+      },
+      {
+        "path":"idea4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"14 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 3",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1650",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Green",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":26,
+    "name":"ThinkPad",
+    "brand_id":6,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Lenovo",
+    "model_specification_id":25,
+    "price":"1199.00",
+    "stock":24,
+    "current_price":"1199.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"thi1.jpg"
+      },
+      {
+        "path":"thi2.jpg"
+      },
+      {
+        "path":"thi3.jpg"
+      },
+      {
+        "path":"thi4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 5",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1650",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Red",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":27,
+    "name":"Legion",
+    "brand_id":6,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Lenovo",
+    "model_specification_id":26,
+    "price":"599.00",
+    "stock":85,
+    "current_price":"599.00",
+    "old_price":"607.00",
+    "photos":[
+      {
+        "path":"legi1.jpg"
+      },
+      {
+        "path":"legi2.jpg"
+      },
+      {
+        "path":"legi3.jpg"
+      },
+      {
+        "path":"legi4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"14 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 7",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"2TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2080",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"4-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Red",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":28,
+    "name":"Legion",
+    "brand_id":6,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Lenovo",
+    "model_specification_id":27,
+    "price":"899.00",
+    "stock":61,
+    "current_price":"899.00",
+    "old_price":"911.00",
+    "photos":[
+      {
+        "path":"lee1.jpg"
+      },
+      {
+        "path":"lee2.jpg"
+      },
+      {
+        "path":"lee3.jpg"
+      },
+      {
+        "path":"lee5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"17.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i5",
+        "parent":"Processor"
+      },
+      {
+        "name":"32GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"512GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2070",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"4-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Silver",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":29,
+    "name":"IdeaGaming 3",
+    "brand_id":6,
+    "created_at":null,
+    "updated_at":"2024-03-06 16:37:08",
+    "brand_name":"Lenovo",
+    "model_specification_id":40,
+    "price":"1099.00",
+    "stock":76,
+    "current_price":"1099.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"ts1.jpg"
+      },
+      {
+        "path":"ts2.jpg"
+      },
+      {
+        "path":"ts3.jpg"
+      },
+      {
+        "path":"ts4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 3",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"2TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2070",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"3-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Green",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":30,
+    "name":"IdeaGaming 3",
+    "brand_id":6,
+    "created_at":null,
+    "updated_at":"2024-03-06 16:37:08",
+    "brand_name":"Lenovo",
+    "model_specification_id":41,
+    "price":"999.00",
+    "stock":45,
+    "current_price":"999.00",
+    "old_price":"1004.00",
+    "photos":[
+      {
+        "path":"ts1.jpg"
+      },
+      {
+        "path":"ts5.jpg"
+      },
+      {
+        "path":"ts2.jpg"
+      },
+      {
+        "path":"ts4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"17.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i5",
+        "parent":"Processor"
+      },
+      {
+        "name":"32GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1650",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10 Pro",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Blue",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":31,
+    "name":"Matebook",
+    "brand_id":7,
+    "created_at":null,
+    "updated_at":"2024-03-06 12:12:47",
+    "brand_name":"Huawei",
+    "model_specification_id":28,
+    "price":"899.00",
+    "stock":91,
+    "current_price":"899.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"mat1.jpg"
+      },
+      {
+        "path":"mat2.jpg"
+      },
+      {
+        "path":"mat3.jpg"
+      },
+      {
+        "path":"mat4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 3",
+        "parent":"Processor"
+      },
+      {
+        "name":"8GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"2TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"3-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Blue",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":32,
+    "name":"GS",
+    "brand_id":8,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"MSI",
+    "model_specification_id":31,
+    "price":"949.00",
+    "stock":10,
+    "current_price":"949.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"msi1.jpg"
+      },
+      {
+        "path":"msi2.jpg"
+      },
+      {
+        "path":"msi3.jpg"
+      },
+      {
+        "path":"msi4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 5",
+        "parent":"Processor"
+      },
+      {
+        "name":"32GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"1TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2070",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"3-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Blue",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":33,
+    "name":"GE",
+    "brand_id":8,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"MSI",
+    "model_specification_id":32,
+    "price":"849.00",
+    "stock":30,
+    "current_price":"849.00",
+    "old_price":"857.00",
+    "photos":[
+      {
+        "path":"mi1.jpg"
+      },
+      {
+        "path":"mi2.jpg"
+      },
+      {
+        "path":"mi3.jpg"
+      },
+      {
+        "path":"mi4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i7",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"1TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2060",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Green",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":34,
+    "name":"GE",
+    "brand_id":8,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"MSI",
+    "model_specification_id":33,
+    "price":"899.00",
+    "stock":41,
+    "current_price":"899.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"msg1.jpg"
+      },
+      {
+        "path":"msg2.jpg"
+      },
+      {
+        "path":"msg3.jpg"
+      },
+      {
+        "path":"msg4.jpg"
+      },
+      {
+        "path":"msg5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i3",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"2TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.8 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"White",
+        "parent":"Color"
+      },
+      {
+        "name":"5 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":35,
+    "name":"GP",
+    "brand_id":8,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"MSI",
+    "model_specification_id":34,
+    "price":"1099.00",
+    "stock":52,
+    "current_price":"1099.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"ge1.jpg"
+      },
+      {
+        "path":"ge2.jpg"
+      },
+      {
+        "path":"ge3.jpg"
+      },
+      {
+        "path":"ge4.jpg"
+      },
+      {
+        "path":"ge5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 3",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"128GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1650",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.8 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Blue",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":36,
+    "name":"G6 KF",
+    "brand_id":9,
+    "created_at":null,
+    "updated_at":"2024-03-06 16:13:50",
+    "brand_name":"Gigabyte",
+    "model_specification_id":29,
+    "price":"649.00",
+    "stock":31,
+    "current_price":"649.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"gk1.jpg"
+      },
+      {
+        "path":"gk2.jpg"
+      },
+      {
+        "path":"gk3.jpg"
+      },
+      {
+        "path":"gk4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"17.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i3",
+        "parent":"Processor"
+      },
+      {
+        "name":"8GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"1TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1650",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.8 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Black",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":37,
+    "name":"G6 KF",
+    "brand_id":9,
+    "created_at":null,
+    "updated_at":"2024-03-06 16:13:50",
+    "brand_name":"Gigabyte",
+    "model_specification_id":30,
+    "price":"599.00",
+    "stock":65,
+    "current_price":"599.00",
+    "old_price":"607.00",
+    "photos":[
+      {
+        "path":"kf2.jpg"
+      },
+      {
+        "path":"kf1.jpg"
+      },
+      {
+        "path":"kf3.jpg"
+      },
+      {
+        "path":"kf4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"14 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 3",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"1TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1650",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"3-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Red",
+        "parent":"Color"
+      },
+      {
+        "name":"1 year",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":38,
+    "name":"Aorus",
+    "brand_id":9,
+    "created_at":null,
+    "updated_at":"2024-03-06 16:12:33",
+    "brand_name":"Gigabyte",
+    "model_specification_id":35,
+    "price":"949.00",
+    "stock":57,
+    "current_price":"949.00",
+    "old_price":"954.00",
+    "photos":[
+      {
+        "path":"ao1.jpg"
+      },
+      {
+        "path":"ao2.jpg"
+      },
+      {
+        "path":"ao3.jpg"
+      },
+      {
+        "path":"ao5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"17.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 5",
+        "parent":"Processor"
+      },
+      {
+        "name":"64GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"512GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2080",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Linux",
+        "parent":"Operating System"
+      },
+      {
+        "name":"4-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.8 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"White",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":39,
+    "name":"Aero",
+    "brand_id":9,
+    "created_at":null,
+    "updated_at":"2024-03-06 16:26:30",
+    "brand_name":"Gigabyte",
+    "model_specification_id":36,
+    "price":"699.00",
+    "stock":70,
+    "current_price":"699.00",
+    "old_price":"709.00",
+    "photos":[
+      {
+        "path":"gb1.jpg"
+      },
+      {
+        "path":"gb2.jpg"
+      },
+      {
+        "path":"gb3.jpg"
+      },
+      {
+        "path":"gb4.jpg"
+      },
+      {
+        "path":"gb5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"15.6 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 3",
+        "parent":"Processor"
+      },
+      {
+        "name":"32GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10 Pro",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"White",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":40,
+    "name":"Notebook",
+    "brand_id":10,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Samsung",
+    "model_specification_id":37,
+    "price":"1049.00",
+    "stock":78,
+    "current_price":"1049.00",
+    "old_price":"1055.00",
+    "photos":[
+      {
+        "path":"samsung1.jpg"
+      },
+      {
+        "path":"samsung2.jpg"
+      },
+      {
+        "path":"samsung3.jpg"
+      },
+      {
+        "path":"samsung4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 5",
+        "parent":"Processor"
+      },
+      {
+        "name":"8GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"256GB SSD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2070",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10",
+        "parent":"Operating System"
+      },
+      {
+        "name":"8-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"2.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Green",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":41,
+    "name":"Notebook",
+    "brand_id":10,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Samsung",
+    "model_specification_id":38,
+    "price":"1099.00",
+    "stock":99,
+    "current_price":"1099.00",
+    "old_price":"1109.00",
+    "photos":[
+      {
+        "path":"book1.jpg"
+      },
+      {
+        "path":"book2.jpg"
+      },
+      {
+        "path":"book3.jpg"
+      },
+      {
+        "path":"book4.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"17.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"AMD Ryzen 7",
+        "parent":"Processor"
+      },
+      {
+        "name":"16GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"1TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce RTX 2080",
+        "parent":"Graphics"
+      },
+      {
+        "name":"FreeDOS",
+        "parent":"Operating System"
+      },
+      {
+        "name":"3-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"Silver",
+        "parent":"Color"
+      },
+      {
+        "name":"2 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"No",
+        "parent":"New arrivals"
+      }
+    ]
+  },
+  {
+    "id":42,
+    "name":"Galaxy Book",
+    "brand_id":10,
+    "created_at":null,
+    "updated_at":null,
+    "brand_name":"Samsung",
+    "model_specification_id":39,
+    "price":"1199.00",
+    "stock":1,
+    "current_price":"1199.00",
+    "old_price":null,
+    "photos":[
+      {
+        "path":"galax1.jpg"
+      },
+      {
+        "path":"galax2.jpg"
+      },
+      {
+        "path":"galax3.jpg"
+      },
+      {
+        "path":"galax5.jpg"
+      }
+    ],
+    "specifications":[
+      {
+        "name":"13.3 inch",
+        "parent":"Display"
+      },
+      {
+        "name":"Intel Core i7",
+        "parent":"Processor"
+      },
+      {
+        "name":"8GB",
+        "parent":"Memory"
+      },
+      {
+        "name":"1TB HDD",
+        "parent":"Storage"
+      },
+      {
+        "name":"NVIDIA GeForce GTX 1660 Ti",
+        "parent":"Graphics"
+      },
+      {
+        "name":"Windows 10 Pro",
+        "parent":"Operating System"
+      },
+      {
+        "name":"3-cell",
+        "parent":"Battery"
+      },
+      {
+        "name":"1.5 kg",
+        "parent":"Weight"
+      },
+      {
+        "name":"White",
+        "parent":"Color"
+      },
+      {
+        "name":"3 years",
+        "parent":"Warranty"
+      },
+      {
+        "name":"Yes",
+        "parent":"New arrivals"
+      }
+    ]
+  }
+]

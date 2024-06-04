@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Aspire",
+    "brand_id": 1
+  },
+  {
+    "id": 2,
+    "name": "Predator",
+    "brand_id": 1
+  },
+  {
+    "id": 3,
+    "name": "Swift",
+    "brand_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Macbook Air",
+    "brand_id": 2
+  },
+  {
+    "id": 5,
+    "name": "Macbook Pro",
+    "brand_id": 2
+  },
+  {
+    "id": 6,
+    "name": "Zenbook",
+    "brand_id": 3
+  },
+  {
+    "id": 7,
+    "name": "VivoBook",
+    "brand_id": 3
+  },
+  {
+    "id": 8,
+    "name": "ROG",
+    "brand_id": 3
+  },
+  {
+    "id": 9,
+    "name": "Inspiron",
+    "brand_id": 4
+  },
+  {
+    "id": 10,
+    "name": "XPS",
+    "brand_id": 4
+  },
+  {
+    "id": 11,
+    "name": "Alienware",
+    "brand_id": 4
+  },
+  {
+    "id": 12,
+    "name": "Pavilion",
+    "brand_id": 5
+  },
+  {
+    "id": 13,
+    "name": "Envy",
+    "brand_id": 5
+  },
+  {
+    "id": 14,
+    "name": "Spectre",
+    "brand_id": 5
+  },
+  {
+    "id": 15,
+    "name": "IdeaPad",
+    "brand_id": 6
+  },
+  {
+    "id": 16,
+    "name": "ThinkPad",
+    "brand_id": 6
+  },
+  {
+    "id": 17,
+    "name": "Legion",
+    "brand_id": 6
+  },
+  {
+    "id": 18,
+    "name": "Matebook",
+    "brand_id": 7
+  },
+  {
+    "id": 19,
+    "name": "G6 KF",
+    "brand_id": 9
+  },
+  {
+    "id": 20,
+    "name": "GS",
+    "brand_id": 8
+  },
+  {
+    "id": 21,
+    "name": "GE",
+    "brand_id": 8
+  },
+  {
+    "id": 22,
+    "name": "GP",
+    "brand_id": 8
+  },
+  {
+    "id": 23,
+    "name": "Aorus",
+    "brand_id": 9
+  },
+  {
+    "id": 24,
+    "name": "Aero",
+    "brand_id": 9
+  },
+  {
+    "id": 25,
+    "name": "Notebook",
+    "brand_id": 10
+  },
+  {
+    "id": 26,
+    "name": "Galaxy Book",
+    "brand_id": 10
+  },
+  {
+    "id": 27,
+    "name": "IdeaGaming 3",
+    "brand_id": 6
+  },
+  {
+    "id": 28,
+    "name": "Victus",
+    "brand_id": 5
+  }
+]
