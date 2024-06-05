@@ -32,18 +32,20 @@
 
       <!-- Brand Filter End -->
 
-      <!-- Model Filter Start -->
-      <h5 *ngIf="selectedBrands.length > 0" class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter by Model</span></h5>
-      <div *ngIf="selectedBrands.length > 0" class="bg-light p-4 mb-30">
-        <form>
-          <div *ngFor="let model of filteredModels; let i = index">
-            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-              <input type="checkbox" class="custom-control-input" id="model-all{{model.name}}" name="model" value="{{model.name}}" (change)="filterProducts($event, 'model', model.name)">
-              <label class="custom-control-label" for="model-all{{model.name}}">{{model.name}}</label>
+      @if(filteredModels.length > 0){
+        <h5 *ngIf="selectedBrands.length > 0" class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter by Model</span></h5>
+        <div *ngIf="selectedBrands.length > 0" class="bg-light p-4 mb-30">
+          <form>
+            <div *ngFor="let model of filteredModels; let i = index">
+              <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" id="model-all{{model.name}}" name="model" value="{{model.name}}" (change)="filterProducts($event, 'model', model.name)">
+                <label class="custom-control-label" for="model-all{{model.name}}">{{model.name}}</label>
+              </div>
             </div>
-          </div>
-        </form>
-      </div>
+          </form>
+        </div>
+      }
+
 
       <!-- Model Filter End -->
     </div>
