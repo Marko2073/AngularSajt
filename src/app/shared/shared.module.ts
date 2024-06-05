@@ -32,14 +32,11 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { CustomDdlComponent } from './components/custom-ddl/custom-ddl.component';
-import { FilterBlockComponent } from './components/filter-block/filter-block.component';
 
 
 @NgModule({
   declarations: [
-    CustomDdlComponent,
-    FilterBlockComponent
+
   ],
   imports: [
     CommonModule,
@@ -111,7 +108,6 @@ import { FilterBlockComponent } from './components/filter-block/filter-block.com
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    FilterBlockComponent
   ]
 })
 export class SharedModule { }

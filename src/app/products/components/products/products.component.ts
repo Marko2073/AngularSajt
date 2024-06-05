@@ -21,7 +21,8 @@ export class ProductsComponent implements OnInit {
   filteredProducts: Product[] = [];
   filteredModels: Model[] = [];
   brandids: string[] = [];
-  idSel: string = '';
+  showModal: boolean = false;
+  selectedValue: string = '';
 
   constructor(private productService: ProductService, private brandsService: BrandsService, private modelsService: ModelsService) { }
 
@@ -29,7 +30,7 @@ export class ProductsComponent implements OnInit {
     this.productService.getProducts().subscribe({
       next: (data) => {
         this.products = data;
-        this.filteredProducts = data; // Initialize filteredProducts with all products
+        this.filteredProducts = data;
       },
       error: (err) => {
         console.log(err);
@@ -89,6 +90,16 @@ export class ProductsComponent implements OnInit {
       this.filteredProducts = this.products;
       this.filteredModels = this.models;
     }
+    this.sortAll(event);
+  }
+  sortAll(event: any): void {
+    const value = this.selectedValue;
+    if (value === 'asc') {
+      this.filteredProducts = this.filteredProducts.sort((a, b) => a.current_price - b.current_price);
+    } else if (value === 'desc') {
+      this.filteredProducts = this.filteredProducts.sort((a, b) => b.current_price - a.current_price);
+    }
+
   }
 
 
