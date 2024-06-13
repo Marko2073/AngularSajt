@@ -23,15 +23,15 @@ export class ContactComponent {
   formSend() {
     if (this.emailFormControl.valid && this.nameFormControl.valid && this.subjectFormControl.valid && this.MessageFormControl.valid) {
 
-      this.contactService.postMessage({
-        email: this.emailFormControl.value,
-        name: this.nameFormControl.value,
-        subject: this.subjectFormControl.value,
-        message: this.MessageFormControl.value
-      }).subscribe({
-        next: (data) => {
-          console.log(this.emailFormControl.value);
-          this.router.navigate(['/home']);
+            this.contactService.postMessage({
+              email: this.emailFormControl.value,
+              name: this.nameFormControl.value,
+              subject: this.subjectFormControl.value,
+              message: this.MessageFormControl.value
+            }).subscribe({
+              next: (data) => {
+                console.log(this.emailFormControl.value);
+                this.router.navigate(['/home']);
 
 
 
