@@ -14,7 +14,7 @@ interface Product {
   stock: any;
   old_price: any;
   photos: any[];
-  specifications : any[];
+  specifications: any[];
 }
 
 @Component({
@@ -26,16 +26,15 @@ export class SingleComponent implements OnInit {
   public id: string = '';
   public products: Product[] = [];
   public product: Product | undefined;
+  public showModal: boolean = false;
 
-  constructor(private route: ActivatedRoute, private productService: ProductService) {
-
-  }
+  constructor(private route: ActivatedRoute, private productService: ProductService) {}
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.id = params['id'];
 
-      // Sada kada imamo id, možemo dobiti proizvode
+      // Fetch the products
       this.productService.getProducts().subscribe({
         next: (data: Product[]) => {
           this.products = data;
@@ -48,28 +47,27 @@ export class SingleComponent implements OnInit {
       });
     });
   }
-  AddToCart(event:any, id:string){
+
+  AddToCart(event: any, id: string) {
     let cart: any[] = [];
     let item = {
       id: id,
       quantity: 1
     };
     let cartData = localStorage.getItem('cart');
-    if(cartData == null){
+    if (cartData == null) {
       cart.push(item);
       localStorage.setItem('cart', JSON.stringify(cart));
-
-
     } else {
       let index = -1;
       cart = JSON.parse(cartData);
-      for(let i = 0; i < cart.length; i++){
-        if(cart[i].id === id){
+      for (let i = 0; i < cart.length; i++) {
+        if (cart[i].id === id) {
           index = i;
           break;
         }
       }
-      if(index === -1){
+      if (index === -1) {
         cart.push(item);
         localStorage.setItem('cart', JSON.stringify(cart));
       } else {
@@ -78,8 +76,10 @@ export class SingleComponent implements OnInit {
       }
     }
 
+    this.showModal = true;
   }
 
-
-  protected readonly event = event;
+  closeModal() {
+    this.showModal = false;
+  }
 }
