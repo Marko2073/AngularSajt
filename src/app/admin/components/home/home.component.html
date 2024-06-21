@@ -1,0 +1,20 @@
+<div>
+  <h2>Table Data for {{ tableName }}</h2>
+  <a [routerLink]="['/admin/insert', tableName]" class="btn btn-success">Insert</a>
+  <table class="styled-table">
+    <thead>
+    <tr>
+      <th *ngFor="let column of tableColumns">{{ column }}</th>
+      <th>Update</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let row of tableData">
+      <td *ngFor="let column of tableColumns">{{ row[column] }}</td>
+      <td><a [routerLink]="['/admin/update', tableName, row['id']]" class="btn btn-primary">Update</a></td>
+      <td><a href="#" class="btn btn-danger">Delete</a></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

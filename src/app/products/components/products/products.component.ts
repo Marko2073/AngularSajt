@@ -22,7 +22,7 @@ export class ProductsComponent implements OnInit {
   specifications: any[] = [];
   selectedBrand: number =0;
   selectedModel: number = 0;
-  filteredProducts: Product[] = [];
+  filteredProducts: any[] = [];
   filteredModels: Model[] = [];
   showModal: boolean = false;
   selectedValue: string = '';
@@ -48,6 +48,7 @@ export class ProductsComponent implements OnInit {
       const productsResponse = await this.productService.getAllProducts().toPromise();
       this.totalPages = Math.ceil(productsResponse.length / PRODUCTS_PER_PAGE);
       this.niz = Array.from({ length: this.totalPages }, (_, i) => i + 1);
+      console.log(productsResponse)
 
       // Dohvatanje brendova
       const brandsResponse = await this.brandsService.getBrands().toPromise();

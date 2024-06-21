@@ -10,6 +10,7 @@ import {LayoutModule} from "./layout/layout.module";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {SharedModule} from "./shared/shared.module";
 import {AdminLayoutModule} from "./admin-layout/admin-layout.module";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {AdminLayoutModule} from "./admin-layout/admin-layout.module";
     HttpClientModule,
     LayoutModule,
     SharedModule,
-    AdminLayoutModule
+    AdminLayoutModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideAnimationsAsync()

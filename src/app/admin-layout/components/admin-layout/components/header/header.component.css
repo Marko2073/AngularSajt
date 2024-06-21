@@ -1,0 +1,25 @@
+.admin-header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.admin-header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.admin-header nav ul li {
+  margin-right: 20px;
+}
+
+.admin-header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.admin-header nav ul li a:hover {
+  text-decoration: underline;
+}

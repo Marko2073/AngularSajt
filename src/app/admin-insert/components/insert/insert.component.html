@@ -1,0 +1,33 @@
+<div>
+  <h2>Insert Data for {{ tableName }}</h2>
+  <form>
+    <div *ngFor="let column of tableColumns">
+      <label>{{ column }}</label>
+      <div *ngIf="column.endsWith('Id')">
+        <select  name="{{ column }}">
+          @if(column!="ModelVersionId"){
+            @if(column=="ParentId"){
+              <option [value]="null">Parent</option>
+            @for(option of koloneZaIspis['Specifications']; track $index){
+            <option [value]="option.name">{{ option.name }}</option>
+                }
+              } @else {
+              <option *ngFor="let option of koloneZaIspis[column.slice(0, -2) + 's']" [value]="option.name">{{ option.name }}</option>
+
+            }
+          }
+          @else if(column=="ModelVersionId"){
+            @for(option of koloneZaIspis['ModelVersions']; track $index){
+              <option [value]="option.id">{{ option.id }}</option>
+            }
+          }
+
+        </select>
+      </div>
+      <div *ngIf="!column.endsWith('Id')">
+        <input  type="text" name="{{ column }}">
+      </div>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</div>

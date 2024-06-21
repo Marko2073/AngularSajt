@@ -1,0 +1,9 @@
+<aside class="admin-sidebar">
+  <nav>
+    <ul>
+      @for(table of tables; track $index){
+        <li><a routerLink="/admin/home/{{table.name}}">{{table.name}}</a></li>
+      }
+    </ul>
+  </nav>
+</aside>

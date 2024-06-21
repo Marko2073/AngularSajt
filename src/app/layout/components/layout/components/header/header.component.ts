@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {AuthService} from "../../../../../auth.service";
+import { AuthService } from '../../../../../auth.service';
 
 @Component({
   selector: 'app-header',
@@ -9,20 +9,21 @@ import {AuthService} from "../../../../../auth.service";
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private http: HttpClient, private router: Router, private authService : AuthService) {}
+  role: string = '';
+
+  constructor(private http: HttpClient, private router: Router, private authService: AuthService) {}
 
   isLoggedIn(): boolean {
-    if(localStorage.getItem('token')){
-      return true;
-    }
-    else {
-      return false;
-    }
+    return !!localStorage.getItem('token');
+  }
+
+  isAdmin(): boolean {
+    const storedRole = localStorage.getItem('role');
+    this.role = storedRole ? storedRole : '';
+    return this.role === '1';
   }
 
   Logout() {
-    // Remove token from localStorage
-
     // Endpoint for logout API
     const apiUrl = 'http://localhost:5175/api/auth';
 
@@ -35,6 +36,7 @@ export class HeaderComponent {
     this.http.delete(apiUrl, { headers }).subscribe(
       () => {
         localStorage.removeItem('token');
+        localStorage.removeItem('role');
         this.router.navigate(['/login']);
       },
       (error) => {

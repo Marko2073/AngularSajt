@@ -27,11 +27,14 @@
           <i class="fa fa-shopping-cart text-dark"></i>
         </a>
       </div>
-      <div class="d-lg-flex justify-content-end align-items-center">
-        <a href="/admin" class="btn btn-outline-primary ml-auto">
-          Admin Panel
-        </a>
-      </div>
+      @if(this.isAdmin()){
+        <div class="d-lg-flex justify-content-end align-items-center">
+          <a href="/admin" class="btn btn-outline-primary ml-auto">
+            Admin Panel
+          </a>
+        </div>
+      }
+
     </div>
   </div>
   <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">

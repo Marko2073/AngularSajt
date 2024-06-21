@@ -1,0 +1,32 @@
+.admin-sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 15px;
+  height: calc(100vh - 60px - 40px); /* Adjust 60px and 40px according to the header and footer heights */
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.admin-sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-sidebar nav ul li {
+  margin: 10px 0;
+}
+
+.admin-sidebar nav ul li a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.admin-sidebar nav ul li a:hover {
+  background-color: #ddd;
+}
