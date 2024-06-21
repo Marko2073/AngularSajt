@@ -6,7 +6,7 @@ import {Observable} from "rxjs";
   providedIn: 'root'
 })
 export class BrandsService {
-  private jsonUrl = 'assets/json/brand.json';
+  private jsonUrl = 'http://localhost:5175/api/brands/';
 
   constructor(private http: HttpClient) {}
 

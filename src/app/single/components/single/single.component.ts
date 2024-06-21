@@ -35,16 +35,7 @@ export class SingleComponent implements OnInit {
       this.id = params['id'];
 
       // Fetch the products
-      this.productService.getProducts().subscribe({
-        next: (data: Product[]) => {
-          this.products = data;
-          this.product = this.products.find((product: Product) => product.id == this.id);
-          console.log(this.product);
-        },
-        error: (err) => {
-          console.log(err);
-        }
-      });
+
     });
   }
 

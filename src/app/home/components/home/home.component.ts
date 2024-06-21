@@ -15,10 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   ngOnInit() {
-    this.productService.getProducts().subscribe(products => {
-      this.products = products;
-      this.selectFeaturedProducts();
-    });
+
   }
 
   private getSeededRandom(seed: number): number {

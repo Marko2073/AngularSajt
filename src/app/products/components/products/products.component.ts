@@ -4,8 +4,11 @@ import { BrandsService } from '../../buisness-logic/api/brands.service';
 import { ModelsService } from "../../buisness-logic/api/models.service";
 import { Product } from "../../interfaces/product";
 import {Model} from "../../interfaces/model";
+import {ActivatedRoute} from "@angular/router";
+import {SpecificationsService} from "../../buisness-logic/api/specifications.service";
+import {filter} from "rxjs";
 
-
+export const PRODUCTS_PER_PAGE = 5;
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -16,91 +19,116 @@ export class ProductsComponent implements OnInit {
   products: Product[] = [];
   brands: any[] = [];
   models: any[] = [];
-  selectedBrands: string[] = [];
-  selectedModels: string[] = [];
+  specifications: any[] = [];
+  selectedBrand: number =0;
+  selectedModel: number = 0;
   filteredProducts: Product[] = [];
   filteredModels: Model[] = [];
-  brandids: string[] = [];
   showModal: boolean = false;
   selectedValue: string = '';
+  currentPage: number = 1;
+  totalPages: number = 2;
+  niz: any[] = [];
+  selectedFilters: any = {
+    brandId: 0,
+    modelId: 0,
+    specifications: [],
+  };
+  constructor(
+    private productService: ProductService,
+    private brandsService: BrandsService,
+    private modelsService: ModelsService,
+    private route:ActivatedRoute,
+    private specificationsService: SpecificationsService
+  ) { }
 
-  constructor(private productService: ProductService, private brandsService: BrandsService, private modelsService: ModelsService) { }
+  async ngOnInit(): Promise<void> {
+    try {
+      // Dohvatanje svih proizvoda
+      const productsResponse = await this.productService.getAllProducts().toPromise();
+      this.totalPages = Math.ceil(productsResponse.length / PRODUCTS_PER_PAGE);
+      this.niz = Array.from({ length: this.totalPages }, (_, i) => i + 1);
 
-  ngOnInit(): void {
-    this.productService.getProducts().subscribe({
-      next: (data) => {
-        this.products = data;
-        this.filteredProducts = data;
-      },
-      error: (err) => {
-        console.log(err);
-      }
-    });
-    this.brandsService.getBrands().subscribe({
-      next: (data) => {
-        this.brands = data;
+      // Dohvatanje brendova
+      const brandsResponse = await this.brandsService.getBrands().toPromise();
+      this.brands = brandsResponse;
 
-      },
-      error: (err) => {
-        console.log(err);
-      }
-    });
-    this.modelsService.getModels().subscribe({
-      next: (data) => {
-        this.models = data;
-        this.filteredModels = data;
+      // Dohvatanje modela
+      const modelsResponse = await this.modelsService.getModels().toPromise();
+      this.models = modelsResponse;
 
-      },
-      error: (err) => {
-        console.log(err);
-      }
-    });
-  }
+      // Dohvatanje specifikacija
+      const specificationsResponse = await this.specificationsService.getSpecifications().toPromise();
+      this.specifications = specificationsResponse;
 
-  filterProducts(event: any, type: string, name: string): void {
-    const isChecked = event.target.checked;
-
-    if (type === 'brand') {
-      const brandId = this.brands.find(brand => brand.name === name).id.toString();
-      if (isChecked) {
-        this.selectedBrands.push(name);
-        this.brandids.push(brandId);
-      } else {
-        this.selectedBrands = this.selectedBrands.filter(brand => brand !== name);
-        this.brandids = this.brandids.filter(id => id !== brandId);
-      }
-    } else if (type === 'model') {
-      if (isChecked) {
-        this.selectedModels.push(name);
-      } else {
-        this.selectedModels = this.selectedModels.filter(model => model !== name);
-      }
-    }
-
-    if (this.selectedBrands.length > 0) {
-      this.filteredProducts = this.products.filter(product => {
-        const brandMatch = this.selectedBrands.length ? this.selectedBrands.includes(product.brand_name) : true;
-        const modelMatch = this.selectedModels.length ? this.selectedModels.includes(product.name) : true;
-        return brandMatch && modelMatch;
+      // Pretplata na queryParams promene
+      this.route.queryParams.subscribe(params => {
+        const page = +params['page'] || 1;
+        this.currentPage = page;
+        this.getProductsByPage(page);
       });
 
-
-      this.filteredModels = this.models.filter(model => this.brandids.includes(model.brand_id.toString()));
-    } else {
-      this.filteredProducts = this.products;
-      this.filteredModels = this.models;
+    } catch (error) {
+      console.error('Error during initialization:', error);
     }
-    this.sortAll(event);
-  }
-  sortAll(event: any): void {
-    const value = this.selectedValue;
-    if (value === 'asc') {
-      this.filteredProducts = this.filteredProducts.sort((a, b) => a.current_price - b.current_price);
-    } else if (value === 'desc') {
-      this.filteredProducts = this.filteredProducts.sort((a, b) => b.current_price - a.current_price);
-    }
-
   }
 
 
+
+  filterModels(brandId: number): void {
+    console.log(brandId);
+    this.selectedBrand = brandId;
+    console.log(this.selectedBrand);
+    this.filteredModels = this.models.filter((model) => {
+      return model.brandId === brandId;
+    });
+    this.filterProductsAll("brand", brandId);
+  }
+  getProductsByPage(page: number): void {
+    this.productService.getProducts(page).subscribe({
+      next: (data) => {
+        this.products = data;
+        this.filteredProducts = data; // Update filteredProducts as needed
+
+
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    });
+  }
+
+
+  filterProductsAll(type: string, id:number): void {
+    if(type === "brand"){
+      this.selectedFilters.brandId = id;
+      this.selectedFilters.modelId = 0;
+    }else if(type === "model"){
+      this.selectedFilters.modelId = id
+    }
+    else if(type === "specification"){
+      if(this.selectedFilters.specifications.includes(id)){
+        const index = this.selectedFilters.specifications.indexOf(id);
+        this.selectedFilters.specifications.splice(index, 1);
+      }else{
+        this.selectedFilters.specifications.push(id);
+      }
+    }
+    this.productService.getFilteredProducts(this.selectedFilters).subscribe({
+      next: (data) => {
+        this.filteredProducts = data;
+        this.totalPages = Math.ceil(data.length / PRODUCTS_PER_PAGE);
+        this.niz = [];
+        for (let i = 1; i <= this.totalPages; i++) {
+          this.niz.push(i);
+        }
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    });
+
+
+
+  }
 }

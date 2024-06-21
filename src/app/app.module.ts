@@ -9,6 +9,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {LayoutModule} from "./layout/layout.module";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {SharedModule} from "./shared/shared.module";
+import {AdminLayoutModule} from "./admin-layout/admin-layout.module";
 
 @NgModule({
   declarations: [
@@ -21,11 +22,15 @@ import {SharedModule} from "./shared/shared.module";
     FontAwesomeModule,
     HttpClientModule,
     LayoutModule,
-    SharedModule
+    SharedModule,
+    AdminLayoutModule
   ],
   providers: [
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+}

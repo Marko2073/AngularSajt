@@ -22,8 +22,6 @@ export class AppComponent implements AfterViewInit, OnInit {
       localStorage.setItem('cart', JSON.stringify(this.cart));
     }
 
-
-
-
   }
+
 }

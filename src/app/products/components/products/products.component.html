@@ -22,28 +22,44 @@
       <div class="bg-light p-4 mb-30">
         <form>
           <div *ngFor="let brand of brands; let i = index">
-            <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-              <input type="checkbox" class="custom-control-input" id="brand-all{{brand.name}}" name="brand" value="{{brand.name}}" (change)="filterProducts($event, 'brand', brand.name)">
+            <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+              <input type="radio" class="custom-control-input" id="brand-all{{brand.name}}" name="brand" value="{{brand.id}}" (change)="filterModels(brand.id)" >
               <label class="custom-control-label" for="brand-all{{brand.name}}">{{brand.name}}</label>
             </div>
           </div>
         </form>
       </div>
 
+
       <!-- Brand Filter End -->
 
       @if(filteredModels.length > 0){
-        <h5 *ngIf="selectedBrands.length > 0" class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter by Model</span></h5>
-        <div *ngIf="selectedBrands.length > 0" class="bg-light p-4 mb-30">
+        <h5 *ngIf="selectedBrand != 0" class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter by Model</span></h5>
+        <div *ngIf="selectedBrand!= 0" class="bg-light p-4 mb-30">
           <form>
             <div *ngFor="let model of filteredModels; let i = index">
-              <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
-                <input type="checkbox" class="custom-control-input" id="model-all{{model.name}}" name="model" value="{{model.name}}" (change)="filterProducts($event, 'model', model.name)">
+              <div class="custom-control custom-radio d-flex align-items-center justify-content-between mb-3">
+                <input type="radio" class="custom-control-input" id="model-all{{model.name}}" name="model" value="{{model.name}}" (change)="filterProductsAll('model', model.id)">
                 <label class="custom-control-label" for="model-all{{model.name}}">{{model.name}}</label>
               </div>
             </div>
           </form>
         </div>
+      }
+
+      @for(s of specifications;track $index){
+        <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filter by {{s.name}}</span></h5>
+        <div class="bg-light p-4 mb-30">
+          <form>
+            <div *ngFor="let spec of s.specifications; let i = index">
+              <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                <input type="checkbox" class="custom-control-input" id="brand-all{{spec.name}}" name="brand" value="{{spec.id}}" (change)="filterProductsAll('specification', spec.id)">
+                <label class="custom-control-label" for="brand-all{{spec.name}}">{{spec.name}}</label>
+              </div>
+            </div>
+          </form>
+        </div>
+
       }
 
 
@@ -54,25 +70,6 @@
     <!-- Shop Product Start -->
     <div class="col-lg-9 col-md-8">
       <div class="row pb-3">
-        <div class="col-12 pb-1">
-          <div class="d-flex align-items-center justify-content-between mb-4">
-            <div class="ml-2">
-              <div class="btn-group">
-                <mat-form-field>
-                  <mat-label>Sort</mat-label>
-                  <mat-select [(ngModel)]="selectedValue" name="food" (selectionChange)="sortAll($event)">
-
-                    <mat-option value="asc">Price Asc</mat-option>
-                    <mat-option value="desc">Price Desc</mat-option>
-
-                  </mat-select>
-                </mat-form-field>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
         <div *ngIf="filteredProducts.length === 0" class="row justify-content-center">
           <div class="col-md-8">
             <div class="alert alert-warning text-center" role="alert">
@@ -85,6 +82,14 @@
         <div *ngFor="let product of filteredProducts; let i = index" class="col-lg-4 col-md-6 col-sm-6 pb-1">
           <app-card [product]="product" (addToCartEvent)="showModal = true"></app-card>
         </div>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item" *ngFor="let page of niz">
+              <a class="page-link" [routerLink]="['/products']" [queryParams]="{ page: page }">{{ page }}</a>
+            </li>
+          </ul>
+        </nav>
+
       </div>
     </div>
     <!-- Shop Product End -->
