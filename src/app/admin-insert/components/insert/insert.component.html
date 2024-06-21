@@ -1,31 +1,30 @@
 <div>
   <h2>Insert Data for {{ tableName }}</h2>
-  <form>
+  <form (ngSubmit)="onSubmit()">
     <div *ngFor="let column of tableColumns">
       <label>{{ column }}</label>
       <div *ngIf="column.endsWith('Id')">
-        <select  name="{{ column }}">
-          @if(column!="ModelVersionId"){
-            @if(column=="ParentId"){
-              <option [value]="null">Parent</option>
-            @for(option of koloneZaIspis['Specifications']; track $index){
-            <option [value]="option.name">{{ option.name }}</option>
-                }
-              } @else {
-              <option *ngFor="let option of koloneZaIspis[column.slice(0, -2) + 's']" [value]="option.name">{{ option.name }}</option>
-
-            }
-          }
-          @else if(column=="ModelVersionId"){
-            @for(option of koloneZaIspis['ModelVersions']; track $index){
-              <option [value]="option.id">{{ option.id }}</option>
-            }
-          }
-
+        <select name="{{ column }}" [(ngModel)]="formData[column]">
+          <ng-container *ngIf="column !== 'ModelVersionId'">
+            <option *ngIf="column === 'ParentId'" [value]="null">Parent</option>
+            <option *ngFor="let option of koloneZaIspis[column === 'ParentId' ? 'Specifications' : column.slice(0, -2) + 's']; let i = index" [value]="option.id">
+              {{ option.name }}
+            </option>
+          </ng-container>
+          <ng-container *ngIf="column === 'ModelVersionId'">
+            <option *ngFor="let option of koloneZaIspis['ModelVersions']; let i = index" [value]="option.id">
+              {{ option.id }}
+            </option>
+          </ng-container>
         </select>
       </div>
       <div *ngIf="!column.endsWith('Id')">
-        <input  type="text" name="{{ column }}">
+        @if(column=="StockQuantity"){
+          <input type="text" name="{{ 'Quantity' }}" [(ngModel)]="formData['Quantity']">
+        } @else {
+          <input type="text" name="{{ column }}" [(ngModel)]="formData[column]">
+        }
+
       </div>
     </div>
     <button type="submit">Submit</button>

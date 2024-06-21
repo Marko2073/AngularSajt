@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TablesService } from '../../../admin/buissnes-logic-api/tables.service';
 import { ActivatedRoute } from '@angular/router';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-insert',
@@ -12,14 +14,12 @@ export class InsertComponent implements OnInit {
   koloneZaIspis: { [key: string]: any[] } = {};
   tableColumns: string[] = [];
   tableName: string | null = null;
-  modifiedColumn:string="";
-  tableData:any[]=[];
-
+  formData: any = {}; // Objekat za skladištenje forme
+  tabela:string=""
 
   constructor(
     private tableService: TablesService,
-    private route: ActivatedRoute,
-    private tablesService: TablesService
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
@@ -33,32 +33,35 @@ export class InsertComponent implements OnInit {
 
   fetchTableColumns(tableName: string): void {
     this.tableService.getTableColumns(tableName).subscribe(data => {
-
       this.tableColumns = data.filter(column => !['Id', 'CreatedAt', 'UpdatedAt'].includes(column));
-      console.log(this.tableColumns);
-      for (let i of this.tableColumns){
-        const idColumn = i.endsWith('Id')
-        if (idColumn) {
-          if(i!="ParentId"){
-            this.modifiedColumn = i.slice(0, -2) + 's';
+      for (let column of this.tableColumns) {
+        if (column.endsWith('Id')) {
+          if (column !== "ModelVersionId") {
+            this.tabela=column.slice(0, -2) + 's'
+            this.tableService.getTableData(this.tabela ).subscribe(data => {
+              console.log(this.tabela)
+              this.koloneZaIspis[this.tabela] = data;
+            });
+          } else {
+            this.tableService.getTableData('ModelVersions').subscribe(data => {
+              this.koloneZaIspis['ModelVersions'] = data;
+            });
           }
-          else {
-            this.modifiedColumn = "Specifications";
-          }
-
-
-          this.tableService.getTableData(this.modifiedColumn).subscribe(data => {
-            this.tableData = data;
-            this.koloneZaIspis[this.modifiedColumn]=this.tableData
-            console.log(this.koloneZaIspis["Specifications"])
-
-          });
         }
-
       }
-
-
     });
   }
 
+  onSubmit(): void {
+    console.log(this.formData);
+    console.log(this.tableName)
+    this.tableService.insertData(this.tableName!, this.formData).subscribe(
+      (response: any) => {
+        console.log('Data inserted successfully', response);
+      },
+      (error: any) => {
+        console.error('Error inserting data', error);
+      }
+    );
+  }
 }

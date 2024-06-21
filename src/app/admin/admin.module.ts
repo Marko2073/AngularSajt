@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';  // Dodajte FormsModule
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';  // Dodajte FormsModule
 
 import { AdminRoutingModule } from './admin-routing.module';
 import { HomeComponent } from './components/home/home.component';
@@ -14,7 +14,8 @@ import { TableComponent } from './components/home/components/table/table.compone
   imports: [
     CommonModule,
     FormsModule,  // Dodajte FormsModule ovde
-    AdminRoutingModule
+    AdminRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class AdminModule { }
