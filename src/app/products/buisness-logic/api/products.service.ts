@@ -40,6 +40,11 @@ export class ProductService {
     }
   }
 
+  getOneProduct(id: string): Observable<any> {
+    const url = `${this.jsonUrl}/${id}`; // Construct URL with page parameter
+    return this.http.get<any>(url);
+  }
+
 
 
 

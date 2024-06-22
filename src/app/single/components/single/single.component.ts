@@ -1,21 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../../../products/buisness-logic/api/products.service';
+import {Product} from "../../../products/interfaces/product";
 
-interface Product {
-  id: any;
-  name: any;
-  brand_id: any;
-  created_at: any;
-  updated_at: any;
-  brand_name: any;
-  model_specification_id: any;
-  current_price: any;
-  stock: any;
-  old_price: any;
-  photos: any[];
-  specifications: any[];
-}
+
 
 @Component({
   selector: 'app-single',
@@ -25,7 +13,7 @@ interface Product {
 export class SingleComponent implements OnInit {
   public id: string = '';
   public products: Product[] = [];
-  public product: Product | undefined;
+  public product: any | undefined;
   public showModal: boolean = false;
 
   constructor(private route: ActivatedRoute, private productService: ProductService) {}
@@ -33,9 +21,15 @@ export class SingleComponent implements OnInit {
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       this.id = params['id'];
-
-      // Fetch the products
-
+      this.productService.getOneProduct(this.id).subscribe({
+        next: (data: Product) => {
+          this.product = data;
+          console.log(this.product)
+        },
+        error: (err) => {
+          console.error('Error fetching product', err);
+        }
+      });
     });
   }
 

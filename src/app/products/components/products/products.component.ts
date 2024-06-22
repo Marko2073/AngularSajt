@@ -22,7 +22,7 @@ export class ProductsComponent implements OnInit {
   specifications: any[] = [];
   selectedBrand: number =0;
   selectedModel: number = 0;
-  filteredProducts: any[] = [];
+  filteredProducts: Product[] = [];
   filteredModels: Model[] = [];
   showModal: boolean = false;
   selectedValue: string = '';
@@ -89,7 +89,9 @@ export class ProductsComponent implements OnInit {
     this.productService.getProducts(page).subscribe({
       next: (data) => {
         this.products = data;
-        this.filteredProducts = data; // Update filteredProducts as needed
+        this.filteredProducts = data;
+        console.log(this.filteredProducts)
+        console.log(this.products)
 
 
       },

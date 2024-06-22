@@ -38,9 +38,9 @@ export class LoginComponent {
 
         this.http.get(userRoleUrl, { params: emailData }).subscribe(
           (roleResponse: any) => {
-            const role = roleResponse;
-            localStorage.setItem('role', role);
-
+            console.log(roleResponse)
+            localStorage.setItem("role", roleResponse.roleId);
+            localStorage.setItem("User", roleResponse.userId);
             this.router.navigate(['/products']);
           },
           (error) => {
