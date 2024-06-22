@@ -13,7 +13,7 @@ export interface Table {
 export class SidebarComponent implements OnInit {
 
   tables: Table[] = [];
-  excludedTables: string[] = ['UserCarts', 'ErrorLogs', 'UseCaseLogs', 'UserUseCases', 'Purchases', "ModelVersionSpecifications", "Specifications"];
+  excludedTables: string[] = ['UserCarts', 'ErrorLogs', 'UseCaseLogs', 'UserUseCases', 'Purchases', "ModelVersionSpecifications", "Specifications", "Roles", "Users"];
 
   constructor(private tablesService: TablesService) { }
 

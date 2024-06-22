@@ -1,10 +1,10 @@
-<div>
-  <h2>Insert Data for {{ tableName }}</h2>
-  <form (ngSubmit)="onSubmit()">
-    <div *ngFor="let column of tableColumns">
-      <label>{{ column }}</label>
-      <div *ngIf="column.endsWith('Id')">
-        <select name="{{ column }}" [(ngModel)]="formData[column]">
+<div class="form-container">
+  <h2 class="form-title">Insert Data for {{ tableName }}</h2>
+  <form  (ngSubmit)="onSubmit()" class="form-content" enctype="multipart/form-data">
+    <div *ngFor="let column of tableColumns" class="form-group">
+      <label class="form-label">{{ column }}</label>
+      <div *ngIf="column.endsWith('Id')" class="form-input">
+        <select name="{{ column }}" [(ngModel)]="formData[column]" class="form-select">
           <ng-container *ngIf="column !== 'ModelVersionId'">
             <option *ngIf="column === 'ParentId'" [value]="null">Parent</option>
             <option *ngFor="let option of koloneZaIspis[column === 'ParentId' ? 'Specifications' : column.slice(0, -2) + 's']; let i = index" [value]="option.id">
@@ -18,15 +18,23 @@
           </ng-container>
         </select>
       </div>
-      <div *ngIf="!column.endsWith('Id')">
+      <div *ngIf="!column.endsWith('Id')" class="form-input">
         @if(column=="StockQuantity"){
-          <input type="text" name="{{ 'Quantity' }}" [(ngModel)]="formData['Quantity']">
-        } @else {
-          <input type="text" name="{{ column }}" [(ngModel)]="formData[column]">
+          <input type="text" name="{{ 'Quantity' }}" [(ngModel)]="formData['Quantity']" class="form-text">
+        } @else if (column=="Path"){
+          <input  type="file" (change)="onFileSelected($event)" class="form-file">
         }
-
+        @else if (column=="PriceValue"){
+          <input type="text" name="{{ 'Price' }}" [(ngModel)]="formData['Price']" class="form-file">
+        }
+        @else if (column=="DateFrom" || column=="DateTo"){
+          <input type="date" name="{{ column }}" [(ngModel)]="formData[column]" class="form-file">
+        }
+        @else {
+          <input type="text" name="{{ column }}" [(ngModel)]="formData[column]" class="form-text">
+        }
       </div>
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" class="form-button">Submit</button>
   </form>
 </div>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TablesService } from '../../../admin/buissnes-logic-api/tables.service';
-import { ActivatedRoute } from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 
@@ -19,7 +19,8 @@ export class InsertComponent implements OnInit {
 
   constructor(
     private tableService: TablesService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -51,13 +52,18 @@ export class InsertComponent implements OnInit {
       }
     });
   }
+  onFileSelected(event: any): void {
+    const file: File = event.target.files[0];
+    this.formData.PicturePath = file;
+  }
 
   onSubmit(): void {
-    console.log(this.formData);
-    console.log(this.tableName)
+  console.log('Form data', this.formData);
     this.tableService.insertData(this.tableName!, this.formData).subscribe(
       (response: any) => {
-        console.log('Data inserted successfully', response);
+
+        this.router.navigate(['/admin/home', this.tableName]);
+
       },
       (error: any) => {
         console.error('Error inserting data', error);

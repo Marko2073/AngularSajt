@@ -5,15 +5,19 @@
     <thead>
     <tr>
       <th *ngFor="let column of tableColumns">{{ column }}</th>
-      <th>Update</th>
+      <th *ngIf="tableName !== 'Pictures' && tableName !== 'Prices'">Update</th>
       <th>Delete</th>
     </tr>
     </thead>
     <tbody>
     <tr *ngFor="let row of tableData">
       <td *ngFor="let column of tableColumns">{{ row[column] }}</td>
-      <td><a [routerLink]="['/admin/update', tableName, row['id']]" class="btn btn-primary">Update</a></td>
-      <td><a href="#" class="btn btn-danger">Delete</a></td>
+      <td *ngIf="tableName !== 'Pictures' && tableName !== 'Prices'">
+        <a [routerLink]="['/admin/update', tableName, row['id']]" class="btn btn-primary">Update</a>
+      </td>
+      <td>
+        <button (click)="deleteRecord(tableName!, row['id'])" class="btn btn-danger">Delete</button>
+      </td>
     </tr>
     </tbody>
   </table>
