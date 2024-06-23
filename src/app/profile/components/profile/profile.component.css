@@ -1,0 +1,33 @@
+.orders-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.orders-table,
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.orders-table th,
+.products-table th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.orders-table td,
+.products-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.products-table {
+  margin-top: 10px;
+}
+
+.products-table th,
+.products-table td {
+  font-size: 0.9em;
+}
