@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import {Router} from "@angular/router";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -10,6 +10,7 @@ import {Router} from "@angular/router";
 })
 export class LoginComponent {
   loginForm: FormGroup;
+  loginError: string="";
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient, private router: Router) {
     this.loginForm = this.formBuilder.group({
@@ -20,37 +21,34 @@ export class LoginComponent {
 
   onSubmit() {
     const formData = this.loginForm.value;
-
-    // Replace with your API endpoint
     const apiUrl = 'http://localhost:5175/api/auth';
 
     this.http.post(apiUrl, formData).subscribe(
       (response: any) => {
         const token = response.token;
-
         localStorage.setItem('token', token);
 
-        // Get only the email from formData
         const emailData = { email: formData.email };
-
-        // Replace with your API endpoint for userrole
         const userRoleUrl = 'http://localhost:5175/api/userrole';
 
         this.http.get(userRoleUrl, { params: emailData }).subscribe(
           (roleResponse: any) => {
-            console.log(roleResponse)
             localStorage.setItem("role", roleResponse.roleId);
             localStorage.setItem("User", roleResponse.userId);
             this.router.navigate(['/products']);
           },
           (error) => {
-            console.error('Error:', error);
+            console.error('Error getting user role:', error);
           }
         );
-
       },
       (error) => {
-        console.error('Error:', error);
+        if (error.status === 401) {
+          this.loginError = 'Neispravna šifra ili email.';
+        } else {
+          this.loginError = 'Greška prilikom logovanja.';
+        }
+        console.error('Error logging in:', error);
       }
     );
   }

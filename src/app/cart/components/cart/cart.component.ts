@@ -20,6 +20,11 @@ export class CartComponent implements OnInit {
     if (items) {
       this.cartSmth = JSON.parse(items);
     }
+    this.productService.getAllProducts().subscribe((products) => {
+      this.products = products;
+      console.log(this.products);
+      this.updateCartItems();
+    })
 
   }
 

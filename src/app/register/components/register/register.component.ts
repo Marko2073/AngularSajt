@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms'; // Dodajemo Validators radi obavezne validacije
-
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import {ReactiveFormsModule} from "@angular/forms";
 
 interface RegisterUserDto {
   firstName: string;
@@ -49,6 +49,7 @@ export class RegisterComponent implements OnInit {
       return;
     }
 
+    // Provera da li se password i retype password poklapaju
     if (this.registerForm.value.password !== this.registerForm.value.passwordc) {
       console.error("Passwords do not match");
       return;

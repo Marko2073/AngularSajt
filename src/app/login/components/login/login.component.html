@@ -18,6 +18,8 @@
             <div class="form-group">
               <button type="submit" class="btn btn-block btn-primary font-weight-bold py-3">Login</button>
             </div>
+
+            <div *ngIf="loginError" class="alert alert-danger">{{ loginError }}</div>
           </div>
         </form>
       </div>

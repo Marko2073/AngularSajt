@@ -8,34 +8,60 @@
             <div class="col-md-6 form-group">
               <label>First Name</label>
               <input class="form-control" type="text" formControlName="firstName" placeholder="John" />
+              <div *ngIf="f.firstName.invalid && (f.firstName.dirty || f.firstName.touched)" class="text-danger">
+                <span *ngIf="f.firstName.errors?.['required']">Neispravno ste uneli ime.</span>
+              </div>
             </div>
             <div class="col-md-6 form-group">
               <label>Last Name</label>
               <input class="form-control" type="text" formControlName="lastName" placeholder="Doe" />
+              <div *ngIf="f.lastName.invalid && (f.lastName.dirty || f.lastName.touched)" class="text-danger">
+                <span *ngIf="f.lastName.errors?.['required']">Neispravno ste uneli prezime.</span>
+              </div>
             </div>
             <div class="col-md-6 form-group">
               <label>E-mail</label>
               <input class="form-control" type="text" formControlName="email" placeholder="example@email.com" />
+              <div *ngIf="f.email.invalid && (f.email.dirty || f.email.touched)" class="text-danger">
+                <span *ngIf="f.email.errors?.['required']">Neispravno ste uneli email.</span>
+                <span *ngIf="f.email.errors?.['email']">Unesite validan email format.</span>
+              </div>
             </div>
             <div class="col-md-6 form-group">
               <label>Mobile No</label>
               <input class="form-control" type="text" formControlName="phone" placeholder="+123 456 789" />
+              <div *ngIf="f.phone.invalid && (f.phone.dirty || f.phone.touched)" class="text-danger">
+                <span *ngIf="f.phone.errors?.['required']">Neispravno ste uneli broj telefona.</span>
+              </div>
             </div>
             <div class="col-md-6 form-group">
               <label>Address</label>
               <input class="form-control" type="text" formControlName="address" placeholder="123 Street" />
+              <div *ngIf="f.address.invalid && (f.address.dirty || f.address.touched)" class="text-danger">
+                <span *ngIf="f.address.errors?.['required']">Neispravno ste uneli adresu.</span>
+              </div>
             </div>
             <div class="col-md-6 form-group">
               <label>City</label>
               <input class="form-control" type="text" formControlName="city" placeholder="New York" />
+              <div *ngIf="f.city.invalid && (f.city.dirty || f.city.touched)" class="text-danger">
+                <span *ngIf="f.city.errors?.['required']">Neispravno ste uneli grad.</span>
+              </div>
             </div>
             <div class="col-md-6 form-group">
               <label>Password</label>
               <input class="form-control" type="password" formControlName="password" />
+              <div *ngIf="f.password.invalid && (f.password.dirty || f.password.touched)" class="text-danger">
+                <span *ngIf="f.password.errors?.['required']">Neispravno ste uneli šifru.</span>
+                <span *ngIf="f.password.errors?.['minlength']">Šifra mora sadržati najmanje 6 karaktera.</span>
+              </div>
             </div>
             <div class="col-md-6 form-group">
               <label>Retype password</label>
               <input class="form-control" type="password" formControlName="passwordc" />
+              <div *ngIf="f['passwordc'].invalid && (f['passwordc'].dirty || f['passwordc'].touched)" class="text-danger">
+                <span *ngIf="f['passwordc'].errors?.['required']">Neispravno ste ponovo uneli šifru.</span>
+              </div>
             </div>
             <div class="col-md-6 form-group mx-auto">
               <input type="submit" value="Register" class="btn btn-block btn-primary font-weight-bold py-3" />

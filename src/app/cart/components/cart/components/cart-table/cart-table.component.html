@@ -12,10 +12,10 @@
   <tbody class="align-middle">
     @for (product of cartItems; track $index) {
       <tr>
-        <td class="align-middle"><img src="assets/img/products/{{product.photos[0].path}}" alt=""
-                                      style="width: 50px;"> {{ product.brand_name }} {{ product.name }}
+        <td class="align-middle"><img src="assets/img/products/{{product.pictures[0].path}}" alt=""
+                                      style="width: 50px;"> {{ product.brandName }} {{ product.modelName }}
         </td>
-        <td class="align-middle">${{ product.current_price }}</td>
+        <td class="align-middle">${{ product.price }}</td>
         <td class="align-middle">
           <div class="input-group quantity mx-auto" style="width: 100px;">
             <div class="input-group-btn">
@@ -32,7 +32,7 @@
             </div>
           </div>
         </td>
-        <td class="align-middle">${{ product.current_price * product.quantity }}</td>
+        <td class="align-middle">${{ product.price * product.quantity }}</td>
         <td class="align-middle">
           <button class="btn btn-sm btn-danger" (click)="BrisiLs(product.id)"><i class="fa fa-times"></i></button>
         </td>

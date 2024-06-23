@@ -5,6 +5,7 @@ import { ProductsRoutingModule } from './products-routing.module';
 import { ProductsComponent } from './components/products/products.component';
 import {CardComponent} from "./components/products/components/card/card.component";
 import {SharedModule} from "../shared/shared.module";
+import {AppModule} from "../app.module";
 
 
 
@@ -13,12 +14,13 @@ import {SharedModule} from "../shared/shared.module";
     ProductsComponent,
     CardComponent
   ],
-  imports: [
-    CommonModule,
-    ProductsRoutingModule,
-    SharedModule
+    imports: [
+        CommonModule,
+        ProductsRoutingModule,
+        SharedModule,
 
-  ]
+
+    ]
 })
 export class ProductsModule {
 
